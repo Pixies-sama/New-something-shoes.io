@@ -1,0 +1,13 @@
+{
+  "_example": {
+    "id": "gallery-001",
+    "images": [
+      "https://example.com/photo.jpg"
+    ],
+    "gender": "women",
+    "name": "optional",
+    "price": 25000,
+    "description": "optional"
+  },
+  "items": []
+}

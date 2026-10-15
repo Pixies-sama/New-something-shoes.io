@@ -1,5 +1,5 @@
 import { CONFIG } from "./config.js";
-export const price = (p) => `${CONFIG.currency}${p.price.toLocaleString("en-NG")}`;
+export const price = (p) => (p.price ? `${CONFIG.currency}${p.price.toLocaleString("en-NG")}` : "");
 const label = (slug) => slug.replace(/-/g, " ").toUpperCase();
 
 export function productCardHTML(p) {
@@ -20,7 +20,7 @@ export function productCardHTML(p) {
     </article>`;
 }
 export const galleryItemHTML = (p) =>
-  `<button class="gal-item" data-action="view" data-id="${p.id}" aria-label="View ${p.name}"><img src="${p.images[0]}" alt="${p.name}" loading="lazy" width="600" height="600"></button>`;
+  `<button class="gal-item" data-action="view" data-id="${p.id}" aria-label="View ${p.name || "design"}"><img src="${p.images[0]}" alt="${p.name || "Design"}" loading="lazy" width="600" height="600"></button>`;
 
 export function renderGrid(el, list, tpl = productCardHTML) {
   el.innerHTML = list.length

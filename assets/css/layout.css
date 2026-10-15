@@ -2,7 +2,7 @@
 .site-header{position:sticky;top:0;z-index:50;background:rgba(245,241,234,.94);backdrop-filter:blur(10px);transition:box-shadow var(--transition)}
 .site-header.is-scrolled{box-shadow:var(--shadow-soft)}
 .bar{display:flex;align-items:center;height:72px;gap:8px}
-.logo{display:flex;flex-direction:column;line-height:1}
+.logo{display:block;line-height:0}.logo img{height:46px;width:auto}
 .logo span{font:500 26px var(--font-heading)}
 .logo small{font-size:8px;letter-spacing:.22em;text-transform:uppercase;color:var(--color-muted);margin-top:4px}
 .nav{position:absolute;inset:72px 0 auto;background:var(--color-bg);display:none;flex-direction:column;padding:8px 16px 24px;border-bottom:1px solid var(--color-border)}
@@ -21,7 +21,7 @@
 .foot{display:grid;gap:32px;padding:var(--space-6) 0 var(--space-5)}
 .foot h4{font-size:var(--fs-xs);letter-spacing:.2em;text-transform:uppercase;color:var(--color-accent);margin-bottom:12px;font-weight:500}
 .foot li{margin-bottom:8px}.foot a:hover{color:#fff}
-.foot .logo span{color:#fff}.foot .logo small{color:#bdb4a4}
+.foot .logo img{height:64px}
 .foot p{max-width:34ch;margin:12px 0}
 .legal{border-top:1px solid rgba(255,255,255,.1);padding:16px 0;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#a79e8e}
 @media(min-width:768px){.foot{grid-template-columns:1.4fr 1fr 1fr 1fr}}

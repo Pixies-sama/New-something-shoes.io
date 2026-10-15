@@ -1,16 +1,21 @@
 # New Something Shoes
-
-Static, mobile-first catalogue site (HTML, CSS, vanilla ES modules). Orders happen on WhatsApp.
+Domain: https://newshoes.cv (set in `assets/data/products.json` -> `brand.site`).
 
 ## Run locally
-`products.json` is loaded with `fetch`, so use a local server (not double-click):
-`npx serve .` or `python3 -m http.server 8000` then open http://localhost:8000
+`npx serve .` or `python3 -m http.server 8000`
 
-## Edit
-- **Add or change a product:** `assets/data/products.json` (one object per product).
-- **Change the WhatsApp number or message:** `assets/js/config.js` and `assets/js/whatsapp.js`.
-- **Colours / fonts / spacing:** CSS variables at the top of `assets/css/base.css`.
-- **Photos:** the SVGs in `assets/images/` are placeholders. Drop in real photos (WebP/JPG, ~1000x1000, <200KB), then update the `images` paths in `products.json`. Replace `hero/hero.svg` and `about/*.svg` in the HTML pages too.
+## Add products (sections: Palm Slippers, Shoes, Sandals, Collections)
+Add to `assets/data/products.json`. Minimum fields: `id` (letters/numbers/dashes, unique), `name`, `category` (`palm-slippers` | `shoes` | `sandals`), `price`, `images`.
+Images: a URL (`https://...jpg`) or a saved file (`assets/images/products/name.jpg`).
+Each section shows the first 40 per category. Extra ones go to the gallery only.
 
-## Deploy
-Upload the folder to Netlify, Vercel or GitHub Pages. Replace `YOUR-DOMAIN.com` in `sitemap.xml` and `robots.txt`, and use absolute URLs for `og:image` once you have a domain.
+## Gallery-only items
+Add to `assets/data/gallery.json` -> `items`. Minimum: `id`, `images`. Optional: `gender` (men/women/unisex), `name`, `price`, `description`.
+The gallery shows all section products + gallery.json items.
+
+## After ANY change to the JSON files
+Run `node tools/build.js`. It regenerates `products/*.html` (needed for WhatsApp photo previews) and `sitemap.xml`.
+On Netlify/Vercel set the build command to `node tools/build.js` and it runs on every deploy.
+
+## WhatsApp
+Number/message: `assets/js/config.js`, `assets/js/whatsapp.js`. WhatsApp previews need JPG/PNG images on a public https URL.

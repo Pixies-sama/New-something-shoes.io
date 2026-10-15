@@ -2,7 +2,42 @@
   "brand": {
     "name": "New Something Shoes",
     "whatsapp": "2347033623329",
-    "tiktok": "@newsomethingshoes0"
+    "tiktok": "@newsomethingshoes0",
+    "site": "https://newshoes.cv"
+  },
+  "defaults": {
+    "sizes": {
+      "palm-slippers": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ],
+      "sandals": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "shoes": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    }
   },
   "products": [
     {
@@ -28,8 +63,8 @@
         "Brown"
       ],
       "images": [
-        "https://i.pinimg.com/736x/67/83/c0/6783c02269375a02026a4284431637a6.jpg",
-        "https://i.pinimg.com/736x/c2/8d/2f/c28d2feb7670dd922319976bd2708bfa.jpg"
+        "assets/images/products/classic-leather-palm-1.svg",
+        "assets/images/products/classic-leather-palm-2.svg"
       ],
       "isNew": false,
       "premium": false,
@@ -58,9 +93,8 @@
         "Dark Brown"
       ],
       "images": [
-        "https://i.pinimg.com/736x/7f/5a/6c/7f5a6c49eb84f0b4de28c972d88a69e0.jpg",
-        "https://i.pinimg.com/1200x/bd/42/6d/bd426d6e56406a961767b185a8a6f28d.jpg",
-        "https://i.pinimg.com/736x/05/f1/88/05f1888754c34d05f764fda1483db6e3.jpg"
+        "assets/images/products/executive-woven-palm-1.svg",
+        "assets/images/products/executive-woven-palm-2.svg"
       ],
       "isNew": false,
       "premium": true,
@@ -89,10 +123,8 @@
         "Tan"
       ],
       "images": [
-        "https://i.pinimg.com/736x/67/dc/0a/67dc0a0f95ec17842e9407122e08fbb8.jpg",
-        "https://i.pinimg.com/736x/c9/0a/52/c90a52d9a5907b400040fe0cb1845ac7.jpg",
-        "https://i.pinimg.com/736x/36/97/8f/36978f85789fdff5082006965d038731.jpg"
-
+        "assets/images/products/everyday-suede-palm-1.svg",
+        "assets/images/products/everyday-suede-palm-2.svg"
       ],
       "isNew": false,
       "premium": false,
@@ -121,8 +153,8 @@
         "Tan"
       ],
       "images": [
-        "https://i.pinimg.com/736x/cd/db/ac/cddbac4b93f929ee7ef3e245313c95f7.jpg",
-        "https://i.pinimg.com/736x/eb/b7/a6/ebb7a6a747d77e33211783636aec78d2.jpg"
+        "assets/images/products/heritage-braided-palm-1.svg",
+        "assets/images/products/heritage-braided-palm-2.svg"
       ],
       "isNew": false,
       "premium": false,
@@ -151,8 +183,8 @@
         "Ivory"
       ],
       "images": [
-        "https://i.pinimg.com/1200x/85/bb/58/85bb58a5ae4efed07546e517703ee4b4.jpg",
-        "https://i.pinimg.com/1200x/6b/83/71/6b83717ee59d671f66dfef0e8c47f9b3.jpg"
+        "assets/images/products/ivory-slide-palm-1.svg",
+        "assets/images/products/ivory-slide-palm-2.svg"
       ],
       "isNew": false,
       "premium": false,
@@ -182,8 +214,8 @@
         "Indigo"
       ],
       "images": [
-        "https://i.pinimg.com/1200x/90/83/d0/9083d0bd88fe6cabeb14c78552a9a3d3.jpg",
-        "https://i.pinimg.com/1200x/c1/bc/30/c1bc30dfa7d43ba04add8033d41f5c95.jpg"
+        "assets/images/products/kano-double-strap-sandal-1.svg",
+        "assets/images/products/kano-double-strap-sandal-2.svg"
       ],
       "isNew": true,
       "premium": false,
@@ -213,8 +245,8 @@
         "Tan"
       ],
       "images": [
-        "https://i.pinimg.com/1200x/e2/b9/53/e2b95397159eceba62469c1aa1fdf753.jpg",
-        "https://i.pinimg.com/1200x/3e/6e/84/3e6e84d0efa0c9f195fd2d5c1fcb4697.jpg"
+        "assets/images/products/adire-wrap-sandal-1.svg",
+        "assets/images/products/adire-wrap-sandal-2.svg"
       ],
       "isNew": false,
       "premium": false,
@@ -244,9 +276,8 @@
         "Brown"
       ],
       "images": [
-        "https://i.pinimg.com/1200x/e7/40/37/e7403767b19881428159f017a22c140f.jpg",
-        "https://i.pinimg.com/736x/c0/57/8b/c0578b26d7543166e3351f2b9a34eba4.jpg",
-        "https://i.pinimg.com/736x/d1/1f/83/d11f83248e4f81f33ce9cc4c025542eb.jpg"
+        "assets/images/products/nomad-cross-sandal-1.svg",
+        "assets/images/products/nomad-cross-sandal-2.svg"
       ],
       "isNew": false,
       "premium": false,
@@ -274,8 +305,8 @@
         "Dark Brown"
       ],
       "images": [
-        "https://i.pinimg.com/1200x/34/87/5d/34875df096fce38d48386d32b8a4d338.jpg",
-        "https://i.pinimg.com/736x/c9/d8/57/c9d857904ed1fa6d9cd979b17a5b14b2.jpg"
+        "assets/images/products/lagos-loafer-1.svg",
+        "assets/images/products/lagos-loafer-2.svg"
       ],
       "isNew": false,
       "premium": true,
@@ -303,8 +334,8 @@
         "Brown"
       ],
       "images": [
-        "https://i.pinimg.com/1200x/1e/0e/e3/1e0ee31eeeefeeb53b307c931840072c.jpg",
-        "https://i.pinimg.com/1200x/bd/cd/d0/bdcdd0fcc611a66ade2f387df6071a05.jpg"
+        "assets/images/products/ibadan-oxford-1.svg",
+        "assets/images/products/ibadan-oxford-2.svg"
       ],
       "isNew": false,
       "premium": true,
@@ -332,8 +363,8 @@
         "Black"
       ],
       "images": [
-        "https://i.pinimg.com/736x/10/4a/57/104a57925112cb8b13cf178950a62f47.jpg",
-        "https://i.pinimg.com/736x/e7/17/43/e717435aab66b6e7c6f49d28cce731dc.jpg"
+        "assets/images/products/metropolis-mule-1.svg",
+        "assets/images/products/metropolis-mule-2.svg"
       ],
       "isNew": false,
       "premium": false,
@@ -361,8 +392,8 @@
         "Cream / Tan"
       ],
       "images": [
-        "https://i.pinimg.com/736x/d6/50/88/d65088a08715d52486bbfbbe124108b3.jpg",
-        "https://i.pinimg.com/1200x/86/75/b1/8675b13a7623166d72ac37415be7f47e.jpg"
+        "assets/images/products/zenith-sneaker-1.svg",
+        "assets/images/products/zenith-sneaker-2.svg"
       ],
       "isNew": true,
       "premium": false,

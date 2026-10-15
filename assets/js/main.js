@@ -1,4 +1,4 @@
-import { loadProducts } from "./data.js";
+import { loadAll } from "./data.js";
 import { renderGrid, galleryItemHTML } from "./render.js";
 import { initFilters } from "./filters.js";
 import { initModal } from "./modal.js";
@@ -6,29 +6,34 @@ import { initNav } from "./nav.js";
 import { buildWhatsAppLink } from "./whatsapp.js";
 
 const $ = (id) => document.getElementById(id);
+const STEP = 12; // items revealed per "Show more" click
 
 (async function init() {
   initNav();
   const pid = document.body.dataset.productId; // product detail page
-  if (pid) {
-    try {
-      const p = (await loadProducts()).find((x) => x.id === pid);
-      document.querySelectorAll("[data-wa-product]").forEach((a) => (a.href = buildWhatsAppLink(p)));
-    } catch {}
-    return;
-  }
   const grid = $("product-grid"), featured = $("featured-grid"), gallery = $("gallery-grid");
   const target = grid || featured || gallery;
-  if (!target) return; // About / Contact need no product logic
+  if (!pid && !target) return;
 
-  let products;
-  try { products = await loadProducts(); }
-  catch { target.innerHTML = '<p class="empty">Products could not load. If you opened the file directly, run a local server (see README).</p>'; return; }
+  let data;
+  try { data = await loadAll(); }
+  catch { if (target) target.innerHTML = '<p class="empty">Products could not load. If you opened the file directly, run a local server (see README).</p>'; return; }
 
-  initModal(products, { compact: !!gallery });
+  if (pid) {
+    const p = data.gallery.find((x) => x.id === pid);
+    if (p) {
+      document.querySelectorAll("[data-wa-product]").forEach((a) => (a.href = buildWhatsAppLink(p)));
+      const img = document.querySelector(".pdp__media img");
+      if (img && p.images[0]) img.src = p.images[0];
+    }
+    return;
+  }
+
+  const items = gallery ? data.gallery : data.products;
+  initModal(items, { compact: !!gallery });
 
   if (featured) {
-    renderGrid(featured, featured.dataset.ids.split(",").map((id) => products.find((p) => p.id === id)).filter(Boolean));
+    renderGrid(featured, featured.dataset.ids.split(",").map((id) => data.products.find((p) => p.id === id)).filter(Boolean));
     return;
   }
 
@@ -39,17 +44,17 @@ const $ = (id) => document.getElementById(id);
     if (params.get("focus") === "search") input.focus();
   }
 
-  let limit = 8;
+  let limit = STEP;
   const more = $("show-more");
   const draw = (list) => {
-    if (!gallery) return renderGrid(grid, list);
-    renderGrid(gallery, list.slice(0, limit), galleryItemHTML);
+    const show = list.slice(0, limit);
+    gallery ? renderGrid(gallery, show, galleryItemHTML) : renderGrid(grid, show);
     more.hidden = list.length <= limit;
-    more.onclick = () => { limit += 8; draw(list); };
+    more.onclick = () => { limit += STEP; draw(list); };
   };
-  initFilters(products, {
+  initFilters(items, {
     base: { category: document.body.dataset.category || "all" },
-    onChange: (list) => { limit = 8; draw(list); }
+    onChange: (list) => { limit = STEP; draw(list); }
   });
 
   const key = params.get("f");

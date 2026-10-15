@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://newshoes.cv/
+Disallow: /tools/
+Sitemap: https://newshoes.cv/sitemap.xml

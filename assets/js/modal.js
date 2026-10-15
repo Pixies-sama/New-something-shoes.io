@@ -12,19 +12,19 @@ export function initModal(products, { compact = false } = {}) {
   const open = (id) => {
     const p = products.find((x) => x.id === id);
     if (!p) return;
-    const meta = [p.category.replace(/-/g, " "), compact ? "" : p.subCategory, p.gender].filter(Boolean).join(" · ").toUpperCase();
-    el.setAttribute("aria-label", p.name);
+    const meta = [p.category && p.category.replace(/-/g, " "), compact ? "" : p.subCategory, p.gender].filter(Boolean).join(" · ").toUpperCase();
+    el.setAttribute("aria-label", p.name || "Design");
     el.innerHTML = `
       <div class="modal__box ${compact ? "is-compact" : ""}">
         <button class="modal__close" aria-label="Close">×</button>
         <div class="modal__media">
-          <img class="modal__img" src="${p.images[0]}" alt="${p.name}">
+          <img class="modal__img" src="${p.images[0]}" alt="${p.name || "Design"}">
           ${p.images.length > 1 ? `<div class="thumbs">${p.images.map((s, i) =>
             `<button class="thumb ${i ? "" : "is-active"}" data-src="${s}" aria-label="Show image ${i + 1}"><img src="${s}" alt=""></button>`).join("")}</div>` : ""}
         </div>
         <div class="modal__info">
           <p class="eyebrow">${meta}</p>
-          <h2>${p.name}</h2>
+          <h2>${p.name || ""}</h2>
           <p class="modal__price">${price(p)}</p>
           ${compact ? "" : `
             <p>${p.description}</p>
