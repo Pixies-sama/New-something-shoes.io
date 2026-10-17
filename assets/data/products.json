@@ -63,8 +63,8 @@
         "Brown"
       ],
       "images": [
-        "assets/images/products/classic-leather-palm-1.svg",
-        "assets/images/products/classic-leather-palm-2.svg"
+        "assets/images/products/classic-leather-palm-1.jpg",
+        "assets/images/products/classic-leather-palm-2.jpg"
       ],
       "isNew": false,
       "premium": false,
@@ -93,8 +93,8 @@
         "Dark Brown"
       ],
       "images": [
-        "assets/images/products/executive-woven-palm-1.svg",
-        "assets/images/products/executive-woven-palm-2.svg"
+        "assets/images/products/executive-woven-palm-1.jpg",
+        "assets/images/products/executive-woven-palm-2.jpg"
       ],
       "isNew": false,
       "premium": true,
@@ -123,8 +123,8 @@
         "Tan"
       ],
       "images": [
-        "assets/images/products/everyday-suede-palm-1.svg",
-        "assets/images/products/everyday-suede-palm-2.svg"
+        "assets/images/products/everyday-suede-palm-1.jpg",
+        "assets/images/products/everyday-suede-palm-2.jpg"
       ],
       "isNew": false,
       "premium": false,
@@ -153,8 +153,8 @@
         "Tan"
       ],
       "images": [
-        "assets/images/products/heritage-braided-palm-1.svg",
-        "assets/images/products/heritage-braided-palm-2.svg"
+        "assets/images/products/heritage-braided-palm-1.jpg",
+        "assets/images/products/heritage-braided-palm-2.jpg"
       ],
       "isNew": false,
       "premium": false,
@@ -183,8 +183,8 @@
         "Ivory"
       ],
       "images": [
-        "assets/images/products/ivory-slide-palm-1.svg",
-        "assets/images/products/ivory-slide-palm-2.svg"
+        "assets/images/products/ivory-slide-palm-1.jpg",
+        "assets/images/products/ivory-slide-palm-2.jpg"
       ],
       "isNew": false,
       "premium": false,
@@ -214,8 +214,8 @@
         "Indigo"
       ],
       "images": [
-        "assets/images/products/kano-double-strap-sandal-1.svg",
-        "assets/images/products/kano-double-strap-sandal-2.svg"
+        "assets/images/products/kano-double-strap-sandal-1.jpg",
+        "assets/images/products/kano-double-strap-sandal-2.jpg"
       ],
       "isNew": true,
       "premium": false,
@@ -245,8 +245,8 @@
         "Tan"
       ],
       "images": [
-        "assets/images/products/adire-wrap-sandal-1.svg",
-        "assets/images/products/adire-wrap-sandal-2.svg"
+        "assets/images/products/adire-wrap-sandal-1.jpg",
+        "assets/images/products/adire-wrap-sandal-2.jpg"
       ],
       "isNew": false,
       "premium": false,
@@ -276,8 +276,8 @@
         "Brown"
       ],
       "images": [
-        "assets/images/products/nomad-cross-sandal-1.svg",
-        "assets/images/products/nomad-cross-sandal-2.svg"
+        "assets/images/products/nomad-cross-sandal-1.jpg",
+        "assets/images/products/nomad-cross-sandal-2.jpg"
       ],
       "isNew": false,
       "premium": false,
@@ -305,8 +305,8 @@
         "Dark Brown"
       ],
       "images": [
-        "assets/images/products/lagos-loafer-1.svg",
-        "assets/images/products/lagos-loafer-2.svg"
+        "assets/images/products/lagos-loafer-1.jpg",
+        "assets/images/products/lagos-loafer-2.jpg"
       ],
       "isNew": false,
       "premium": true,
@@ -334,8 +334,8 @@
         "Brown"
       ],
       "images": [
-        "assets/images/products/ibadan-oxford-1.svg",
-        "assets/images/products/ibadan-oxford-2.svg"
+        "assets/images/products/ibadan-oxford-1.jpg",
+        "assets/images/products/ibadan-oxford-2.jpg"
       ],
       "isNew": false,
       "premium": true,
@@ -363,8 +363,8 @@
         "Black"
       ],
       "images": [
-        "assets/images/products/metropolis-mule-1.svg",
-        "assets/images/products/metropolis-mule-2.svg"
+        "assets/images/products/metropolis-mule-1.jpg",
+        "assets/images/products/metropolis-mule-2.jpg"
       ],
       "isNew": false,
       "premium": false,
@@ -392,8 +392,8 @@
         "Cream / Tan"
       ],
       "images": [
-        "assets/images/products/zenith-sneaker-1.svg",
-        "assets/images/products/zenith-sneaker-2.svg"
+        "assets/images/products/zenith-sneaker-1.jpg",
+        "assets/images/products/zenith-sneaker-2.jpg"
       ],
       "isNew": true,
       "premium": false,
